@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="react-0.8.0/build/react.js"></script>
+    <script type="text/javascript" src="react-0.8.0/build/JSXTransformer.js"></script>
+  </head>
+  <body>
+    <script type="text/jsx">
+
+      /**
+       * @jsx React.DOM
+       */
+        
+      var HelloWorld = React.createClass({
+        "render" : function() {
+          return <div><span>hello</span><span> world!</span></div>;
+        }
+      });
+
+      React.renderComponent(
+        <HelloWorld />,
+        document.body
+      );
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="react-0.8.0/build/react.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+        
+      var HelloWorld = React.createClass({
+        "render" : function() {
+          return React.DOM.span({
+            "children" : "hello"
+          })React.DOM.span({
+            "children" : " world!"
+          });
+        }
+      });
+
+      React.renderComponent(
+        HelloWorld({}),
+        document.body
+      );
+
+    </script>
+  </body>
+</html>
